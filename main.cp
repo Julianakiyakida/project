@@ -63,6 +63,7 @@ return name;
 }
  int GetAge() const
 {
+    
 return age;
 }
  double GetWeight() const
@@ -74,16 +75,9 @@ return weight;
 return gender;
 }
 };
-int main()
-{
-    Person p;
-    Person p("Vasiliy");
-    Person p("Vasiliy", 57);
-    Person p("Vasiliy", 67, 78, 0);
-
-    
-        cout << p.GetName() << "\n";
-        cout << p.GetAge() << "\n";
-        cout << p.GetWeight() << "\n";
-        cout << p.GetGender() << "\n";
-}
+Person::Person(){
+SetName("Mikky");
+        SetAge(20);
+        SetGender(true);
+        SetWeight(65);
+        }
